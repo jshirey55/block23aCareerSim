@@ -1,0 +1,149 @@
+/* Steps:
+1. Dynamically style the Roster
+2. Dynamically style the Details div
+3. Dynamically style the Roster Form
+4. Add a hover effect to the Roster items
+5. Add a hover effect to the Details div
+6. Create cards for each puppy on the roster
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#header {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #7acd60;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#roster-form input, #roster-form select {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-size-adjust: 2em;
+}
+
+#roster-form button:hover {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(122, 205, 96, 0.5);
+}
+
+#roster-form {
+    flex-direction: column;
+    display: flex;
+    background-color: #7acd60;
+    padding: 20px;
+    border: #333 solid 2px;
+    border-radius: 8px;
+    width: 40%;
+    margin: 40px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 10px;
+    margin-top: 0%;
+}
+
+#roster-list {
+    list-style: none;
+    padding: 0;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.puppy-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background: #e6ffe6;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #b2d8b2;
+    position: relative;
+    transition: box-shadow 0.2s;
+    list-style: none;
+}
+
+@media (max-width: 800px) {
+    #roster-list {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 600px) {
+    .puppy-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 95vw;
+    }
+    .puppy-card img {
+        margin: 20px 0 0 0;
+        align-self: flex-end;
+    }
+}
+
+.puppy-card img{
+    list-style: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33.333% - 40px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.puppy-details {
+    background-color: #ff8e8e;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 700px;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    align-items: center;
+}
+
+.puppy-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .puppy-details {
+        width: 90%;
+        min-width: unset;
+        padding: 10px;
+    }
+}

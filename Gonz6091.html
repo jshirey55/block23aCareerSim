@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Bowl</title>
+    <script src="Gonz6091.js"></script>
+    <link rel="stylesheet" href="Gonz6091.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Puppy Bowl</h1>
+        <p>Welcome to the Puppy Bowl! Here you can add puppies to the roster and view their details.</p>
+    </div>
+    
+    <div>
+        <h2>Roster Form</h2>
+        <form id="roster-form">
+            <label for="puppy-name">Puppy Name:</label>
+            <input type="text" id="puppy-name" name="puppy-name" required>
+
+            <label for="puppy-breed">Puppy Breed:</label>
+            <input type="text" id="puppy-breed" name="puppy-breed" required>
+
+            <label for="puppy-status">Status:</label>
+            <select id="puppy-status" name="puppy-status">
+                <option value="bench" default>Bench</option>
+                <option value="field">Field</option>
+            </select>
+
+            <label for="puppy-image">Image URL:</label>
+            <input type="url" id="puppy-image" name="puppy-image">
+
+            <label for="team-id">Team ID:</label>
+            <input type="number" id="team-id" name="team-id">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="current-roster">
+        <h2>Puppy Bowl Roster</h2>
+        <ul id="roster-list">
+            <!-- Puppy items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <div>
+        <!--Display Puppy Details when a puppy is clicked in roster-->
+        <h2>Puppy Details</h2>
+        <p id="puppy-details"> Select a puppy from the roster to see details below.</p>
+    </p>
+
+    
+
+</body>
+</html>
