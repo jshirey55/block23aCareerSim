@@ -1,0 +1,95 @@
+.renderedImg {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.renderSide {
+    display: flex;
+    margin: 10px;
+    border: solid;
+    padding: 5px;
+}
+.delete-button {
+    border-radius: 7px 7px 7px 7px;
+    color: red;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: rgb(224, 170, 170);
+}
+
+.details-button {
+    border-radius: 7px 7px 7px 7px;
+    color: rgb(18, 70, 119);
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: rgb(175, 176, 235);
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(204, 196, 196);
+}
+
+.renderP {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#list-of-pets-container {
+    width: 550px;
+    display: inline-block;
+}
+
+#pet-details-container {
+   max-width: 750px;
+   margin: 10px 10px 0px 50px;
+   border: solid;
+   padding: 20px 20px 20px 20px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+#new-pet-form-container {
+    vertical-align: top;
+    margin-right: 100px;
+    float: right;
+    border: solid;
+    padding: 10px 10px 10px 10px;
+}
+
+.renderedImgDetails {
+    max-width: 750px;
+    max-height: 750px;
+}
+
+.renderPDetails {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#name {
+    margin: 8px;
+}
+
+#breed {
+    margin: 8px;
+}
+
+#status {
+    margin: 8px;
+}
+
+#imageUrl {
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+#h3det {
+    text-align: center;
+    font-size: 40px;
+    margin: 3px;
+    text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Bowl</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+ 
+<body>
+    <header> 
+        <h1>Puppy Bowl</h1>
+    </header>
+
+    <div id="list-of-pets-container"></div>
+      <div id="pet-details-container" class="details-section" style = "display: none"></div>
+    <div id="new-pet-form-container">
+        <form id="new-pet-form">
+            <label for="name">
+                Name:
+                <input type="text" name="name" id="name" placeholder="Name">
+            </label><br>
+                Breed:
+            <label for="breed">
+                <input type="text" id="breed" name="breed" placeholder="Breed">
+            </label><br>
+            <label for="status">
+                Status:
+                <select name="status" id="status">
+                    <option value="">--Please select--</option>
+                    <option value="bench">bench</option>
+                    <option value="field">field</option>
+                </select>
+            </label><br>
+            <label for="imageUrl">
+                Image URL:
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Image URL">
+            </label><br>
+            <label for="teamId">
+                Team ID
+                <input type="number" name="teamId" id="teamId" placeholder="Team ID">
+            </label>
+            <button type="submit">Create</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
