@@ -1,0 +1,23 @@
+{
+  "name": "block23acareersim",
+  "version": "1.0.0",
+  "description": "Career Simulation: Puppy Bowl",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshirey55/block23aCareerSim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshirey55/block23aCareerSim/issues"
+  },
+  "homepage": "https://github.com/jshirey55/block23aCareerSim#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

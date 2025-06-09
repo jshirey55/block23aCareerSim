@@ -20,7 +20,6 @@ const fetchAllPets = async () => {
 }
 
 const createNewPet = async (name, breed, status, imageUrl, teamId) => {
-    const numericTeamId = teamId ? Number(teamId) : null
     
     try {
         await fetch(API_URL, {
@@ -30,7 +29,7 @@ const createNewPet = async (name, breed, status, imageUrl, teamId) => {
                 breed,
                 status,
                 imageUrl,
-                teamId: isNaN(numericTeamId) ? null : numericTeamId
+                teamId: null
             }),
             headers: {
                 "Content-Type": "application/json",
